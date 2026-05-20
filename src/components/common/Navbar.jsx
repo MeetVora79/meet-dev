@@ -97,7 +97,7 @@ function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="container-width flex items-center justify-between px-6 py-5">
+        <div className=".container-width navbar-width flex items-center justify-between py-5">
           {/* Logo */}
           <button
             onClick={() => {
@@ -120,7 +120,7 @@ function Navbar() {
 
             {/* Brand */}
             <div className="block">
-              <h2 className="text-xl font-black theme-heading">Meet.dev</h2>
+              <h2 className="text-xl font-black theme-heading">Meet<span className="text-violet-400">.dev</span></h2>
             </div>
           </button>
 
@@ -145,12 +145,12 @@ function Navbar() {
             ))}
           </nav>
 
-          <button
+          {/* <button
             onClick={toggleTheme}
-            className="hidden rounded-2xl border theme-border theme-glass p-3 theme-heading transition hover:bg-white/10 md:block"
+            className="hidden rounded-2xl border theme-border theme-glass p-3 theme-heading transition hover:bg-white/10 md:block hover:cursor-pointer"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          </button> */}
 
           {/* Mobile Button */}
           <button
@@ -182,12 +182,12 @@ function Navbar() {
                 </button>
               ))}
             </nav>
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="mt-5 rounded-2xl border theme-border theme-glass px-5 py-3 theme-heading"
             >
               {theme === "dark" ? "Light Mode" : "Dark Mode"}
-            </button>
+            </button> */}
           </motion.div>
         )}
       </header>

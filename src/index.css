@@ -39,6 +39,10 @@ html.lenis {
   padding-inline: 1rem;
 }
 
+.navbar-width {
+  padding-inline: 1.5rem;
+}
+
 .marquee {
   width: max-content;
   animation: marquee 45s linear infinite;
@@ -123,11 +127,6 @@ body {
 .dark .glass-intense {
   background: rgba(255, 255, 255, 0.05);
 }
-
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
 
 button,
 a {

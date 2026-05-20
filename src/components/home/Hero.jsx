@@ -13,7 +13,7 @@ function Hero() {
     }
   };
   return (
-    <section className="relative overflow-hidden px-6 pt-28 pb-12 md:pb-24 md:pt-40">
+    <section className="relative overflow-hidden px-6 pt-28 pb-16 md:pb-24 md:pt-40">
       {/* Background Glow */}
       <div className="absolute left-[-10%] top-[-10%] h-[400px] w-[400px] rounded-full bg-violet-600/20 blur-3xl" />
 
@@ -66,7 +66,7 @@ function Hero() {
               duration: 1,
               delay: 0.2,
             }}
-            className="mt-8 max-w-2xl text-lg leading-relaxed theme-subtext md:text-xl"
+            className="mt-6 max-w-2xl text-lg leading-relaxed theme-subtext md:text-xl"
           >
             MERN Stack Developer focused on building scalable web
             applications, premium frontend experiences, and modern high-performance interfaces.
@@ -91,7 +91,7 @@ function Hero() {
 
             <button
                 onClick={() => scrollToSection("contact")}
-                className="rounded-2xl border theme-border theme-glass backdrop-blur-xl px-6 py-4 md:px-8 md:py-4 font-semibold theme-heading transition hover:border-violet-500/30 hover:scale-105 hover:bg-white/10 hover:cursor-pointer"
+                className="rounded-2xl border theme-border theme-glass backdrop-blur-xl px-6 py-4 md:px-8 font-semibold theme-heading transition hover:border-violet-500/30 hover:scale-105 hover:bg-white/10 hover:cursor-pointer"
               >
                 Let’s Connect
               </button>

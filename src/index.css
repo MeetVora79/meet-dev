@@ -36,9 +36,14 @@ html.lenis {
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
-  padding-inline: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .container-width {
+    padding-inline: 1rem;
+  }
+  
+}
 .navbar-width {
   padding-inline: 1.5rem;
 }

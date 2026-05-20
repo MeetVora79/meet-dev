@@ -8,7 +8,6 @@ import Contact from "./components/home/Contact";
 import Footer from "./components/common/Footer";
 import ScrollProgress from "./components/common/ScrollProgress";
 import GithubSection from "./components/home/GithubSection";
-import FloatingDock from "./components/common/FloatingDock";
 import Loader from "./components/common/Loader";
 import { useEffect, useState } from "react";
 
@@ -18,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1100);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -37,7 +36,6 @@ function App() {
         <GithubSection />
         <Experience />
         <Contact />
-        <FloatingDock />
         <Footer />
     </div>
   );

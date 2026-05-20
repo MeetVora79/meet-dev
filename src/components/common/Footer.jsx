@@ -180,7 +180,7 @@ function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-20 flex flex-col items-center justify-between gap-8 border-t theme-border pt-8 md:flex-row">
+        <div className="mt-20 flex items-center justify-between gap-8 border-t theme-border pt-8 md:flex-row">
           <p className="text-sm text-gray-500">
             © 2026 Meet Vora. All rights reserved.
           </p>

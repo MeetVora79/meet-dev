@@ -5,7 +5,7 @@ import profileImage from "../../assets/profileImage.jpg";
 
 function About() {
   return (
-    <section id="about" className="relative overflow-hidden px-6 py-24">
+    <section id="about" className="relative overflow-hidden px-6 md:py-24 py-16">
       {/* Glow */}
       <div className="absolute left-0 top-0 h-[300px] w-[300px] bg-violet-600/10 blur-3xl" />
 

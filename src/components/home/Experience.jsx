@@ -31,7 +31,7 @@ const experiences = [
 
 function Experience() {
   return (
-    <section id="experience" className="relative overflow-hidden px-5 py-24 md:px-6">
+    <section id="experience" className="relative overflow-hidden px-5 py-16 md:py-24 md:px-6">
       <div className="absolute left-0 top-20 h-[280px] w-[280px] rounded-full bg-violet-500/10 blur-2xl" />
       <div className="absolute right-0 bottom-20 h-[280px] w-[280px] rounded-full bg-cyan-500/10 blur-2xl" />
 
@@ -54,7 +54,7 @@ function Experience() {
           </p>
         </div>
 
-        <div className="mt-20 grid gap-8">
+        <div className="mt-16 md:mt-20 grid gap-8">
           {experiences.map((item, index) => (
             <div
               key={index}
@@ -66,7 +66,7 @@ function Experience() {
                 <div className="relative border-b theme-border p-8 lg:border-b-0 lg:border-r">
                   <div className="relative z-10">
                     <div className="mb-10 flex items-center justify-between">
-                      <div className="flex h-16 w-16 items-center justify-center rounded-3xl border theme-border bg-violet-500/10 text-2xl text-violet-400">
+                      <div className="flex h-10 w-10 md:h-16 md:w-16 items-center justify-center rounded-2xl md:rounded-3xl border theme-border bg-violet-500/10 text-lg md:text-2xl text-violet-400">
                         {item.icon}
                       </div>
 
@@ -101,7 +101,7 @@ function Experience() {
                         key={idx}
                         className="rounded-3xl flex gap-5 md:block border theme-border bg-white/5 p-6 transition duration-500 hover:-translate-y-2 hover:border-violet-500/30"
                       >
-                        <div className="mb-6 flex h-10 w-15 md:w-10 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-400">
+                        <div className="mb-6 flex h-10 w-25 md:w-10 items-center justify-center rounded-xl md:rounded-2xl bg-cyan-500/10 text-cyan-400">
                           <FaLayerGroup />
                         </div>
 

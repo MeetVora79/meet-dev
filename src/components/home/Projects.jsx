@@ -67,7 +67,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="relative overflow-hidden px-6 py-28">
+    <section id="projects" className="relative overflow-hidden px-6 md:py-24 py-16">
       {/* Background Glow */}
       <div className="absolute right-0 top-0 h-[300px] w-[300px] bg-cyan-500/10 blur-3xl" />
 
@@ -94,7 +94,7 @@ function Projects() {
         </div>
 
         {/* Projects */}
-        <div className="mt-24 space-y-32">
+        <div className="md:mt-20 mt-15 space-y-20 md:space-y-32">
           {projects.map((project, index) => (
             <div
               key={index}

@@ -40,7 +40,7 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden px-6 py-24">
+    <section id="contact" className="relative overflow-hidden px-6 md:py-24 py-16">
       {/* Glow */}
       <div className="absolute left-0 top-0 h-[300px] w-[300px] bg-cyan-500/10 blur-3xl" />
 
@@ -80,11 +80,11 @@ function Contact() {
               <div className="mt-10 space-y-5">
                   <a
                     href="mailto:meetvora877@gmail.com"
-                    className="block rounded-3xl border theme-border theme-glass p-6 transition hover:scale-[1.02] hover:border-violet-500/30"
+                    className="block rounded-3xl border theme-border theme-glass py-4 px-6 md:p-6 transition hover:scale-[1.02] hover:border-violet-500/30"
                   >
                     <p className="text-sm theme-subtext">Email</p>
 
-                    <h4 className="mt-2 break-all text-xl font-semibold theme-heading">
+                    <h4 className="mt-1 md:mt-2 break-all text-xl font-semibold theme-heading">
                       meetvora877@gmail.com
                     </h4>
 
@@ -95,11 +95,11 @@ function Contact() {
                   href="https://wa.me/918780289328"
                   target="_blank"
                   rel="noreferrer"
-                  className="block rounded-3xl border border-green-500/20 bg-green-500/10 p-6 backdrop-blur-xl transition hover:scale-[1.02]"
+                  className="block rounded-3xl border border-green-500/20 bg-green-500/10 py-4 px-6 md:p-6 backdrop-blur-xl transition hover:scale-[1.02]"
                 >
                   <p className="text-sm text-green-300">WhatsApp</p>
 
-                  <h4 className="mt-2 text-xl font-semibold theme-heading">
+                  <h4 className="mt-1 md:mt-2 text-xl font-semibold theme-heading">
                     Chat on WhatsApp
                   </h4>
                 </a>
@@ -113,7 +113,7 @@ function Contact() {
               ref={form}
               onSubmit={sendEmail}
               whileHover={{ y: -4 }}
-              className="rounded-[32px] border theme-border theme-glass p-8"
+              className="rounded-[32px] border theme-border theme-glass p-6 md:p-8"
             >
               <div className="space-y-6">
                 <input
@@ -134,7 +134,7 @@ function Contact() {
 
                 <textarea
                   name="message"
-                  rows="6"
+                  rows="5"
                   placeholder="Your Message"
                   required
                   className="w-full rounded-2xl border theme-border bg-slate-900/60 px-5 py-4 theme-heading outline-none transition focus:border-violet-500"

@@ -44,7 +44,7 @@ function GithubSection() {
   }, [repoLimit]);
 
   return (
-    <section id="github" className="relative overflow-hidden px-6 py-24">
+    <section id="github" className="relative overflow-hidden px-6 md:py-24 py-16">
       {/* Glow */}
       <div className="absolute right-0 top-0 h-[300px] w-[300px] bg-cyan-500/10 blur-3xl" />
 
@@ -70,7 +70,7 @@ function GithubSection() {
         </div>
 
         {/* Repo Grid */}
-        <div className="mt-20 grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-16 md:mt-20 grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {repos.map((repo) => (
             <div
               key={repo.id}

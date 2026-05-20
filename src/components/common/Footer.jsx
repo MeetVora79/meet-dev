@@ -46,7 +46,7 @@ function Footer() {
 
               {/* Brand */}
               <div className="flex flex-col">
-                <h2 className="text-3xl font-black theme-heading">Meet.dev</h2>
+                <h2 className="text-3xl font-black theme-heading">Meet<span className="text-violet-400">.dev</span></h2>
                 <span className="text-sm text-gray-600">
                   Digital Experiences
                 </span>

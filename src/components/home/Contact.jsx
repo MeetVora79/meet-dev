@@ -40,7 +40,10 @@ function Contact() {
   };
 
   return (
-    <section id="contact" className="relative overflow-hidden px-6 md:py-24 py-16">
+    <section
+      id="contact"
+      className="relative overflow-hidden px-6 md:py-24 py-16"
+    >
       {/* Glow */}
       <div className="absolute left-0 top-0 h-[300px] w-[300px] bg-cyan-500/10 blur-3xl" />
 
@@ -78,21 +81,19 @@ function Contact() {
 
               {/* Contact Cards */}
               <div className="mt-10 space-y-5">
-                  <a
-                    href="mailto:meetvora877@gmail.com"
-                    className="block rounded-3xl border theme-border theme-glass py-4 px-6 md:p-6 transition hover:scale-[1.02] hover:border-violet-500/30"
-                  >
-                    <p className="text-sm theme-subtext">Email</p>
+                <a
+                  href="mailto:meetvora877@gmail.com"
+                  className="block rounded-3xl border theme-border theme-glass py-4 px-6 md:p-6 transition hover:scale-[1.02] hover:border-violet-500/30"
+                >
+                  <p className="text-sm theme-subtext">Email</p>
 
-                    <h4 className="mt-1 md:mt-2 break-all text-xl font-semibold theme-heading">
-                      meetvora877@gmail.com
-                    </h4>
-
-                  </a>
-                
+                  <h4 className="mt-1 md:mt-2 break-all text-xl font-semibold theme-heading">
+                    meetvora877@gmail.com
+                  </h4>
+                </a>
 
                 <a
-                  href="https://wa.me/918780289328"
+                  href="https://wa.me/918780289328?text=Hi%20Meet,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you."
                   target="_blank"
                   rel="noreferrer"
                   className="block rounded-3xl border border-green-500/20 bg-green-500/10 py-4 px-6 md:p-6 backdrop-blur-xl transition hover:scale-[1.02]"

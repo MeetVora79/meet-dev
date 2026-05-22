@@ -137,7 +137,7 @@ function Projects() {
 
                     {/* API Logs */}
                     <div className="mt-6 space-y-5 font-mono text-sm">
-                      <div className="flex items-center justify-between rounded-2xl border border-white/5 bg-white/5 px-5 py-3">
+                      <div className="flex items-center justify-between rounded-2xl border border-white/5 theme-card px-5 py-3">
                         <div>
                           <p className="text-cyan-400">POST /api/auth/login</p>
 
@@ -151,7 +151,7 @@ function Projects() {
                         </span>
                       </div>
 
-                      <div className="flex items-center justify-between rounded-2xl border border-white/5 bg-white/5 px-5 py-3">
+                      <div className="flex items-center justify-between rounded-2xl border border-white/5 theme-card px-5 py-3">
                         <div>
                           <p className="text-violet-400">GET /api/products</p>
 
@@ -165,7 +165,7 @@ function Projects() {
                         </span>
                       </div>
 
-                      <div className="flex items-center justify-between rounded-2xl border border-white/5 bg-white/5 px-5 py-3">
+                      <div className="flex items-center justify-between rounded-2xl border border-white/5 theme-card px-5 py-3">
                         <div>
                           <p className="text-pink-400">POST /api/cart/add</p>
 
@@ -182,7 +182,7 @@ function Projects() {
 
                     {/* Bottom Stats */}
                     <div className="mt-5 grid grid-cols-3 gap-4">
-                      <div className="rounded-2xl border border-white/5 bg-white/5 px-5 py-3">
+                      <div className="rounded-2xl border border-white/5 theme-card px-5 py-3">
                         <p className="text-xs text-gray-500">Database</p>
 
                         <p className="mt-2 text-sm font-semibold text-green-400">
@@ -190,7 +190,7 @@ function Projects() {
                         </p>
                       </div>
 
-                      <div className="rounded-2xl border border-white/5 bg-white/5 px-5 py-3">
+                      <div className="rounded-2xl border border-white/5 theme-card px-5 py-3">
                         <p className="text-xs text-gray-500">Auth</p>
 
                         <p className="mt-2 text-sm font-semibold text-cyan-400">
@@ -198,7 +198,7 @@ function Projects() {
                         </p>
                       </div>
 
-                      <div className="rounded-2xl border border-white/5 bg-white/5 px-5 py-3">
+                      <div className="rounded-2xl border border-white/5 theme-card px-5 py-3">
                         <p className="text-xs text-gray-500">API</p>
 
                         <p className="mt-2 text-sm font-semibold text-violet-400">
@@ -232,7 +232,7 @@ function Projects() {
                   {project.stack.map((tech, idx) => (
                     <span
                       key={idx}
-                      className="rounded-full border border-white/10 theme-glass px-4 py-2 text-sm text-gray-300"
+                      className="rounded-full border border-white/10 theme-glass px-4 py-2 text-sm theme-subtext"
                     >
                       {tech}
                     </span>
@@ -245,7 +245,7 @@ function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-3 rounded-2xl bg-violet-600 px-6 py-4 font-semibold theme-heading transition hover:scale-105 hover:bg-violet-700"
+                    className="flex items-center gap-3 rounded-2xl theme-btn px-6 py-4 font-semibold theme-heading transition hover:scale-105 hover:bg-violet-700"
                   >
                     Live Demo
                     <FaExternalLinkAlt />

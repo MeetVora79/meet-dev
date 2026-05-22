@@ -70,7 +70,7 @@ function Experience() {
                         {item.icon}
                       </div>
 
-                      <span className="rounded-full border theme-border bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.2em] theme-subtext">
+                      <span className="rounded-full border theme-border theme-card px-4 py-2 text-xs uppercase tracking-[0.2em] theme-subtext">
                         {item.duration}
                       </span>
                     </div>
@@ -99,7 +99,7 @@ function Experience() {
                     {item.points.map((point, idx) => (
                       <div
                         key={idx}
-                        className="rounded-3xl flex gap-5 md:block border theme-border bg-white/5 p-6 transition duration-500 hover:-translate-y-2 hover:border-violet-500/30"
+                        className="rounded-3xl flex gap-5 md:block border theme-border theme-card p-6 transition duration-500 hover:-translate-y-2 hover:border-violet-500/30"
                       >
                         <div className="mb-6 flex h-10 w-25 md:w-10 items-center justify-center rounded-xl md:rounded-2xl bg-cyan-500/10 text-cyan-400">
                           <FaLayerGroup />
@@ -117,7 +117,7 @@ function Experience() {
                       (tag) => (
                         <span
                           key={tag}
-                          className="rounded-full border theme-border bg-white/5 px-4 py-2 text-sm theme-subtext"
+                          className="rounded-full border theme-border theme-card px-4 py-2 text-sm theme-subtext"
                         >
                           {tag}
                         </span>

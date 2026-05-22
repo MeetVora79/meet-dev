@@ -122,7 +122,7 @@ function Contact() {
                   name="user_name"
                   placeholder="Your Name"
                   required
-                  className="w-full rounded-2xl border theme-border bg-slate-900/60 px-5 py-4 theme-heading outline-none transition focus:border-violet-500"
+                  className="w-full rounded-2xl border theme-border theme-input px-5 py-4 theme-heading outline-none transition focus:border-violet-500"
                 />
 
                 <input
@@ -130,7 +130,7 @@ function Contact() {
                   name="user_email"
                   placeholder="Your Email"
                   required
-                  className="w-full rounded-2xl border theme-border bg-slate-900/60 px-5 py-4 theme-heading outline-none transition focus:border-violet-500"
+                  className="w-full rounded-2xl border theme-border theme-input px-5 py-4 theme-heading outline-none transition focus:border-violet-500"
                 />
 
                 <textarea
@@ -138,13 +138,13 @@ function Contact() {
                   rows="5"
                   placeholder="Your Message"
                   required
-                  className="w-full rounded-2xl border theme-border bg-slate-900/60 px-5 py-4 theme-heading outline-none transition focus:border-violet-500"
+                  className="w-full rounded-2xl border theme-border theme-input px-5 py-4 theme-heading outline-none transition focus:border-violet-500"
                 />
 
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full rounded-2xl bg-gradient-to-r from-violet-700 to-cyan-700 px-6 py-4 font-semibold theme-heading transition hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60"
+                  className="w-full rounded-2xl theme-primary-btn px-6 py-4 font-semibold theme-heading transition hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {loading ? "Sending..." : "Send Message →"}
                 </button>

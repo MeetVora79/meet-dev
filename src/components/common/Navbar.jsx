@@ -93,7 +93,7 @@ function Navbar() {
       <header
         className={`fixed top-0 z-[999] w-full transition-all duration-300 ${
           scrolled
-            ? "border-b theme-border bg-slate-950/70 backdrop-blur-xl"
+            ? "border-b theme-border theme-navbar backdrop-blur-xl"
             : "bg-transparent"
         }`}
       >
@@ -111,7 +111,7 @@ function Navbar() {
             className="group flex items-center gap-4 hover:cursor-pointer"
           >
             {/* Logo */}
-            <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 text-lg font-black text-white transition duration-300 group-hover:scale-105 group-hover:border-violet-500/30">
+            <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-white/10 theme-logo text-lg font-black text-white transition duration-300 group-hover:scale-105 group-hover:border-violet-500/20">
               {/* Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 opacity-0 transition duration-300 group-hover:opacity-100" />
 
@@ -145,12 +145,12 @@ function Navbar() {
             ))}
           </nav>
 
-          {/* <button
+          <button
             onClick={toggleTheme}
             className="hidden rounded-2xl border theme-border theme-glass p-3 theme-heading transition hover:bg-white/10 md:block hover:cursor-pointer"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-          </button> */}
+          </button>
 
           {/* Mobile Button */}
           <button
@@ -167,7 +167,7 @@ function Navbar() {
             ref={menuRef}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute left-0 top-full left-4 right-4 w-auto rounded-3xl border border-white/10 bg-slate-950/90 p-6 shadow-[0_8px_40px_rgba(0,0,0,0.35)] backdrop-blur-2xl"
+            className="absolute left-0 top-full left-4 right-4 w-auto rounded-3xl border border-white/10 theme-navbar p-6 shadow-[0_8px_40px_rgba(0,0,0,0.35)] backdrop-blur-2xl"
           >
             <nav className="flex flex-col px-6 py-6">
               {navLinks.map((link) => (
@@ -175,7 +175,7 @@ function Navbar() {
                   key={link}
                   onClick={() => scrollToSection(link)}
                   className={`border-b border-white/5 py-4 text-left text-sm uppercase tracking-[0.15em] transition ${
-                    active === link ? "text-violet-400" : "text-gray-300"
+                    active === link ? "text-violet-400" : "theme-subtext"
                   }`}
                 >
                   {link}

@@ -37,7 +37,7 @@ function Footer() {
           {/* About */}
           <div>
             <h2 className="text-3xl font-black theme-heading flex items-center gap-4">
-              <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 text-lg font-black text-white transition duration-300 group-hover:scale-105 group-hover:border-violet-500/30">
+              <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 theme-logo text-lg font-black text-white transition duration-300 group-hover:scale-105 group-hover:border-violet-500/30">
                 {/* Glow */}
                 <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 opacity-0 transition duration-300 group-hover:opacity-100" />
 
@@ -47,7 +47,7 @@ function Footer() {
               {/* Brand */}
               <div className="flex flex-col">
                 <h2 className="text-3xl font-black theme-heading">Meet<span className="text-violet-400">.dev</span></h2>
-                <span className="text-sm text-gray-600">
+                <span className="text-sm theme-softtext">
                   Digital Experiences
                 </span>
               </div>
@@ -159,7 +159,7 @@ function Footer() {
                 <div>
                   <p className="theme-subtext">Surat, Gujarat</p>
 
-                  <p className="text-gray-500">India</p>
+                  <p className="theme-softtext">India</p>
                 </div>
               </div>
 
@@ -181,14 +181,14 @@ function Footer() {
 
         {/* Bottom */}
         <div className="mt-20 flex items-center justify-between gap-8 border-t theme-border pt-8 md:flex-row">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-600">
             © 2026 Meet Vora. All rights reserved.
           </p>
 
           {/* Scroll Top */}
           <button
             onClick={scrollToTop}
-            className="rounded-2xl border theme-border bg-violet-600 p-4 theme-heading backdrop-blur-xl transition hover:-translate-y-1 hover:bg-violet-700"
+            className="rounded-2xl border theme-border theme-btn p-4 theme-heading backdrop-blur-xl transition hover:-translate-y-1 hover:bg-violet-700"
           >
             <FaArrowUp />
           </button>

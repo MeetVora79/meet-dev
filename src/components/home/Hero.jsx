@@ -32,11 +32,11 @@ function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-3 rounded-full border border-violet-500/60 px-5 py-2 backdrop-blur-xl"
+            className="inline-flex items-center gap-3 rounded-full border border-violet-500/60 px-5 py-2 backdrop-blur-xl "
           >
             <div className="h-2 w-2 rounded-full bg-violet-400 animate-pulse" />
 
-            <p className="text-sm font-medium text-violet-200">
+            <p className="text-sm font-medium theme-heading">
               Available for Opportunities
             </p>
           </motion.div>
@@ -84,7 +84,7 @@ function Hero() {
             <a
               href="/resume.pdf"
               download="Meet_Vora_Resume.pdf"
-              className="rounded-2xl border bg-violet-700 theme-border px-6 py-4 font-semibold theme-heading transition hover:scale-105 hover:border-violet-500/40"
+              className="rounded-2xl border theme-btn theme-border px-6 py-4 font-semibold theme-heading transition hover:scale-105 hover:border-violet-500/40"
             >
               Download Resume
             </a>

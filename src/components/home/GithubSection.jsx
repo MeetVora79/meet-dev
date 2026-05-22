@@ -124,7 +124,7 @@ function GithubSection() {
                   href={repo.html_url}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-8 inline-flex items-center gap-3 rounded-2xl border theme-border bg-white/5 px-5 py-3 font-medium theme-heading transition hover:border-violet-500/40 hover:bg-violet-500/10"
+                  className="mt-8 inline-flex items-center gap-3 rounded-2xl border theme-border theme-card px-5 py-3 font-medium theme-heading transition hover:border-violet-500/40 hover:bg-violet-500/10"
                 >
                   View Repository
                 </a>

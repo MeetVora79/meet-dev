@@ -126,7 +126,7 @@ function Skills() {
 
                 <div className="relative z-10">
                   {/* Number */}
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500/20 to-cyan-500/20 text-xl font-bold text-white transition duration-500 group-hover:scale-110">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl theme-logo text-xl font-bold text-white transition duration-500 group-hover:scale-110">
                     0{index + 1}
                   </div>
 
@@ -145,7 +145,7 @@ function Skills() {
                     {category.skills.map((skill, idx) => (
                       <span
                         key={idx}
-                        className="rounded-full border theme-border bg-white/5 px-4 py-2 text-sm theme-subtext transition hover:border-violet-500/40 hover:text-violet-300"
+                        className="rounded-full border theme-border theme-card px-4 py-2 text-sm theme-subtext transition hover:border-violet-500/40 hover:text-violet-300"
                       >
                         {skill}
                       </span>

@@ -61,7 +61,6 @@ const projects = [
       "UploadThing",
       "Gemini AI",
       "Recharts",
-      "Lucide React",
     ],
   },
 ];

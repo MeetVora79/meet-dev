@@ -45,22 +45,23 @@ const projects = [
   },
 
   {
-    title: "IPO Watch Clone",
+    title: "AI Resume Analyzer",
     description:
-      "A fully responsive IPO Watch clone built using Next.js, showcasing advanced UI design, responsive layouts, and component-based architecture.",
+      "AI Resume Analyzer is a full-stack SaaS-style web app built using Next.js, it helps users upload resumes, get AI-powered ATS analysis, and compare their resume with a target job description.",
     image: project3,
-    github: "https://github.com/MeetVora79/ipo-watch-clone",
-    live: "https://ipo-watch-clone.vercel.app/",
+    github: "https://github.com/MeetVora79/ai-resume-analyzer",
+    live: "https://resume-ai-next.vercel.app/",
     stack: [
       "Next.js",
-      "React.js",
       "JavaScript",
       "Tailwind CSS",
       "Shadcn UI",
-      "Radix UI",
-      "Embla Carousel",
+      "Clerk Auth",
+      "MongoDB Atlas",
+      "UploadThing",
+      "Gemini AI",
+      "Recharts",
       "Lucide React",
-      "Responsive Design",
     ],
   },
 ];

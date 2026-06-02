@@ -2,9 +2,10 @@ import { motion } from "framer-motion";
 
 function Loader() {
   return (
-    <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-slate-950">
+    <div role="status" aria-label="Loading portfolio" className="fixed inset-0 z-[99999] flex items-center justify-center bg-slate-950">
 
       <div className="relative flex flex-col items-center">
+        <span className="sr-only">Loading portfolio</span>
 
         {/* Glow */}
         <motion.div
@@ -49,7 +50,7 @@ function Loader() {
             delay: 0.3,
             duration: 0.7,
           }}
-          className="mt-4 text-sm uppercase tracking-[0.4em] text-cyan-400"
+          className="mt-4 text-sm uppercase tracking-[0.4em] text-cyan-300"
         >
           MERN Stack Developer
         </motion.p>

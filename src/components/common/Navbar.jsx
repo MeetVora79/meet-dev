@@ -97,9 +97,11 @@ function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className=".container-width navbar-width flex items-center justify-between py-5">
+        <div className="container-width navbar-width flex items-center justify-between py-5">
           {/* Logo */}
           <button
+            type="button"
+            aria-label="Go to top"
             onClick={() => {
               window.scrollTo({
                 top: 0,
@@ -129,6 +131,7 @@ function Navbar() {
             {navLinks.map((link) => (
               <button
                 key={link}
+                type="button"
                 onClick={() => scrollToSection(link)}
                 className={`relative text-sm font-medium uppercase tracking-[0.15em] transition duration-300 hover:cursor-pointer ${
                   active === link
@@ -146,33 +149,41 @@ function Navbar() {
           </nav>
 
           <button
+            type="button"
             onClick={toggleTheme}
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             className="hidden rounded-2xl border theme-border theme-glass p-3 theme-heading transition hover:bg-white/10 md:block hover:cursor-pointer"
           >
-            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+            {theme === "dark" ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
           </button>
 
           {/* Mobile Button */}
           <button
+            type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="theme-heading md:hidden"
+            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            className="rounded-2xl border theme-border theme-glass p-3 theme-heading md:hidden"
           >
-            {menuOpen ? <X /> : <Menu />}
+            {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {menuOpen && (
           <motion.div
+            id="mobile-menu"
             ref={menuRef}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="absolute left-0 top-full left-4 right-4 w-auto rounded-3xl border border-white/10 theme-navbar p-6 shadow-[0_8px_40px_rgba(0,0,0,0.35)] backdrop-blur-2xl"
+            className="absolute top-full left-4 right-4 w-auto rounded-3xl border theme-border theme-navbar p-6 shadow-[0_8px_40px_rgba(0,0,0,0.35)] backdrop-blur-2xl"
           >
             <nav className="flex flex-col px-6 py-6">
               {navLinks.map((link) => (
                 <button
                   key={link}
+                  type="button"
                   onClick={() => scrollToSection(link)}
                   className={`border-b border-white/5 py-4 text-left text-sm uppercase tracking-[0.15em] transition ${
                     active === link ? "text-violet-400" : "theme-subtext"

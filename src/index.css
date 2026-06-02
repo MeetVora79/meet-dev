@@ -70,8 +70,8 @@ html.lenis {
   --bg-card: rgba(255, 255, 255, 0.05);
   --bg-input: rgba(15, 23, 42, 0.7);
   --text-main: #f8fafc;
-  --text-muted: #a8aeb7;
-  --text-soft: #64748b;
+  --text-muted: #cbd5e1;
+  --text-soft: #94a3b8;
   --border-main: rgba(255, 255, 255, 0.1);
   --nav-bg: rgba(2, 6, 23, 0.75);
 }
@@ -82,8 +82,8 @@ html.lenis {
   --bg-card: rgba(255, 255, 255, 0.9);
   --bg-input: rgba(255, 255, 255, 0.95);
   --text-main: #0f172a;
-  --text-muted: #475569;
-  --text-soft: #64748b;
+  --text-muted: #334155;
+  --text-soft: #334155;
   --border-main: rgba(15, 23, 42, 0.12);
   --nav-bg: rgba(255, 255, 255, 0.85);
 }
@@ -159,6 +159,12 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+:where(button, a, input, textarea):focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 3px;
+}
+
 
 .light body {
   background: #f8fafc;

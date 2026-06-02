@@ -36,7 +36,7 @@ function Footer() {
         <div className="grid gap-14 sm:grid-cols-2 xl:grid-cols-4">
           {/* About */}
           <div>
-            <h2 className="text-3xl font-black theme-heading flex items-center gap-4">
+            <div className="text-3xl font-black theme-heading flex items-center gap-4">
               <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 theme-logo text-lg font-black text-white transition duration-300 group-hover:scale-105 group-hover:border-violet-500/30">
                 {/* Glow */}
                 <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-cyan-500/10 opacity-0 transition duration-300 group-hover:opacity-100" />
@@ -51,7 +51,7 @@ function Footer() {
                   Digital Experiences
                 </span>
               </div>
-            </h2>
+            </div>
 
             <p className="mt-6 leading-relaxed theme-subtext">
               "Full Stack MERN Developer focused on building scalable
@@ -66,6 +66,7 @@ function Footer() {
 
             <div className="mt-6 flex flex-col gap-4">
               <button
+                type="button"
                 onClick={() => scrollToSection("about")}
                 className="w-fit theme-subtext transition hover:cursor-pointer"
               >
@@ -73,6 +74,7 @@ function Footer() {
               </button>
 
               <button
+                type="button"
                 onClick={() => scrollToSection("skills")}
                 className="w-fit theme-subtext transition hover:cursor-pointer"
               >
@@ -80,6 +82,7 @@ function Footer() {
               </button>
 
               <button
+                type="button"
                 onClick={() => scrollToSection("projects")}
                 className="w-fit theme-subtext transition hover:cursor-pointer"
               >
@@ -87,6 +90,7 @@ function Footer() {
               </button>
 
               <button
+                type="button"
                 onClick={() => scrollToSection("github")}
                 className="w-fit theme-subtext transition hover:cursor-pointer"
               >
@@ -94,6 +98,7 @@ function Footer() {
               </button>
 
               <button
+                type="button"
                 onClick={() => scrollToSection("experience")}
                 className="w-fit theme-subtext transition hover:cursor-pointer"
               >
@@ -101,6 +106,7 @@ function Footer() {
               </button>
 
               <button
+                type="button"
                 onClick={() => scrollToSection("contact")}
                 className="w-fit theme-subtext transition hover:cursor-pointer"
               >
@@ -120,7 +126,7 @@ function Footer() {
                 rel="noreferrer"
                 className="flex items-center gap-3 theme-subtext transition hover:theme-heading"
               >
-                <FaGithub />
+                <FaGithub aria-hidden="true" />
                 GitHub
               </a>
 
@@ -130,7 +136,7 @@ function Footer() {
                 rel="noreferrer"
                 className="flex items-center gap-3 theme-subtext transition hover:theme-heading"
               >
-                <FaLinkedin />
+                <FaLinkedin aria-hidden="true" />
                 LinkedIn
               </a>
 
@@ -140,7 +146,7 @@ function Footer() {
                 rel="noreferrer"
                 className="flex items-center gap-3 theme-subtext transition hover:theme-heading"
               >
-                <FaInstagram />
+                <FaInstagram aria-hidden="true" />
                 Instagram
               </a>
             </div>
@@ -153,7 +159,7 @@ function Footer() {
             <div className="mt-6 space-y-5">
               <div className="flex items-start gap-4">
                 <div className="mt-1 text-violet-400">
-                  <FaMapMarkerAlt />
+                  <FaMapMarkerAlt aria-hidden="true" />
                 </div>
 
                 <div>
@@ -165,7 +171,7 @@ function Footer() {
 
               <div className="flex items-start gap-4">
                 <div className="mt-1 text-violet-400">
-                  <FaEnvelope />
+                  <FaEnvelope aria-hidden="true" />
                 </div>
 
                 <a
@@ -181,16 +187,18 @@ function Footer() {
 
         {/* Bottom */}
         <div className="mt-20 flex items-center justify-between gap-8 border-t theme-border pt-8 md:flex-row">
-          <p className="text-sm text-gray-600">
+          <p className="text-sm theme-softtext">
             © 2026 Meet Vora. All rights reserved.
           </p>
 
           {/* Scroll Top */}
           <button
+            type="button"
+            aria-label="Scroll to top"
             onClick={scrollToTop}
-            className="rounded-2xl border theme-border theme-btn p-4 theme-heading backdrop-blur-xl transition hover:-translate-y-1 hover:bg-violet-700"
+            className="rounded-2xl border theme-border theme-btn p-4 backdrop-blur-xl transition hover:-translate-y-1 hover:bg-violet-700"
           >
-            <FaArrowUp />
+            <FaArrowUp aria-hidden="true" />
           </button>
         </div>
       </div>

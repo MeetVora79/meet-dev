@@ -90,6 +90,7 @@ function Hero() {
             </a>
 
             <button
+                type="button"
                 onClick={() => scrollToSection("contact")}
                 className="rounded-2xl border theme-border theme-glass backdrop-blur-xl px-6 py-4 md:px-8 font-semibold theme-heading transition hover:border-violet-500/30 hover:scale-105 hover:bg-white/10 hover:cursor-pointer"
               >
@@ -109,23 +110,32 @@ function Hero() {
           >
             <a
               href="https://github.com/MeetVora79"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit GitHub profile"
               className="rounded-2xl border theme-border theme-glass p-4 theme-heading transition hover:-translate-y-1 hover:border-violet-500/30"
             >
-              <FaGithub size={20} />
+              <FaGithub size={20} aria-hidden="true" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/meetvora79/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit LinkedIn profile"
               className="rounded-2xl border theme-border theme-glass p-4 theme-heading transition hover:-translate-y-1 hover:border-cyan-500/30"
             >
-              <FaLinkedin size={20} />
+              <FaLinkedin size={20} aria-hidden="true" />
             </a>
 
             <a
               href="https://www.instagram.com/meet_vora_07"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit Instagram profile"
               className="rounded-2xl border theme-border theme-glass p-4 theme-heading transition hover:-translate-y-1 hover:border-pink-500/30"
             >
-              <FaInstagram size={20} />
+              <FaInstagram size={20} aria-hidden="true" />
             </a>
           </motion.div>
         </div>

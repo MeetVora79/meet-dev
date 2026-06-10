@@ -1,4 +1,9 @@
-import { FaCode, FaDatabase, FaLayerGroup, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaCode,
+  FaDatabase,
+  FaLayerGroup,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 const experiences = [
   {
@@ -11,8 +16,9 @@ const experiences = [
     points: [
       "Built frontend using blade templates, javaScript and Bootstrap framework.",
       "Developed backend functionalities using Laravel, MySQL, and REST APIs.",
-      "Implemented database operations and module improvements.",
+      "Implemented backend functionality, role-based access, and database operations",
     ],
+    keywords: ["Problem Solving", "Collaboration", "Analytical Thinking", "Adaptability"],
   },
   {
     role: "React.js Developer Intern",
@@ -23,15 +29,24 @@ const experiences = [
     icon: <FaCode />,
     points: [
       "Built an responsive E-commerce Bookstore web app using React.js and Material UI.",
-      "Created reusable components, routing, and React Hooks logic.",
-      "Developed responsive UI following modern UI/UX practices.",
+      "Created reusable components, routing, state management, and React Hooks.",
+      "Developed responsive user interfaces following modern UI/UX practices.",
+    ],
+    keywords: [
+      "Problem Solving",
+      "Debugging",
+      "Code Quality",
+      "Team Collaboration",
     ],
   },
 ];
 
 function Experience() {
   return (
-    <section id="experience" className="relative overflow-hidden px-5 py-16 md:py-24 md:px-6">
+    <section
+      id="experience"
+      className="relative overflow-hidden px-5 py-16 md:py-24 md:px-6"
+    >
       <div className="absolute left-0 top-20 h-[280px] w-[280px] rounded-full bg-violet-500/10 blur-2xl" />
       <div className="absolute right-0 bottom-20 h-[280px] w-[280px] rounded-full bg-cyan-500/10 blur-2xl" />
 
@@ -42,15 +57,16 @@ function Experience() {
           </p>
 
           <h2 className="text-4xl font-black theme-heading md:text-6xl">
-            Building 
+            Building
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              {" "}Real-World Solutions
+              {" "}
+              Real-World Solutions
             </span>
           </h2>
 
           <p className="mt-8 text-lg leading-relaxed theme-subtext">
-            Practical development experience across frontend interfaces,
-            backend workflows, REST APIs, databases, and responsive UI systems.
+            Practical development experience across frontend interfaces, backend
+            workflows, REST APIs, databases, and responsive UI systems.
           </p>
         </div>
 
@@ -105,24 +121,20 @@ function Experience() {
                           <FaLayerGroup />
                         </div>
 
-                        <p className="leading-relaxed theme-subtext">
-                          {point}
-                        </p>
+                        <p className="leading-relaxed theme-subtext">{point}</p>
                       </div>
                     ))}
                   </div>
 
                   <div className="mt-8 flex flex-wrap gap-3">
-                    {["Internship", "Team Collaboration", "Debugging", "Real Project Work"].map(
-                      (tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full border theme-border theme-card px-4 py-2 text-sm theme-subtext"
-                        >
-                          {tag}
-                        </span>
-                      )
-                    )}
+                    {item.keywords.map((tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border theme-border theme-card px-4 py-2 text-sm theme-subtext"
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>

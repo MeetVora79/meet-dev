@@ -8,17 +8,21 @@ const techStack = [
   "Node.js",
   "Express.js",
   "MongoDB",
+  "MySQL",
   "Tailwind CSS",
   "Bootstrap",
   "Framer Motion",
   "GSAP",
+  "FastAPI",
+  "REST APIs",
+  "JWT Auth",
+  "API Integration",
   "Git",
   "GitHub",
   "VS Code",
-  "REST APIs",
-  "JWT Auth",
-  "MySQL",
   "Postman",
+  "Vercel",
+  "Render"
 ];
 
 const categories = [
@@ -44,9 +48,11 @@ const categories = [
       "Node.js",
       "Express.js",
       "MongoDB",
+      "MySQL",
+      "FastAPI",
       "REST APIs",
       "JWT Authentication",
-      "MySQL",
+      "Pydantic"
     ],
   },
   {
@@ -58,7 +64,8 @@ const categories = [
       "GitHub",
       "Postman",
       "VS Code",
-      "Responsive Design",
+      "Vercel",
+      "Render",
       "Deployment",
     ],
   },

@@ -193,12 +193,12 @@ function Navbar() {
                 </button>
               ))}
             </nav>
-            {/* <button
+            <button
               onClick={toggleTheme}
               className="mt-5 rounded-2xl border theme-border theme-glass px-5 py-3 theme-heading"
             >
               {theme === "dark" ? "Light Mode" : "Dark Mode"}
-            </button> */}
+            </button>
           </motion.div>
         )}
       </header>

@@ -147,16 +147,14 @@ function Hero() {
           <motion.div
             initial={{
               opacity: 0,
-              scale: 0.8,
-              rotate: 4,
+              scale: 0.9,
             }}
             animate={{
               opacity: 1,
               scale: 1,
-              rotate: 0,
             }}
             transition={{
-              duration: 1.2,
+              duration: 1,
             }}
             className="relative w-full max-w-[500px]"
           >

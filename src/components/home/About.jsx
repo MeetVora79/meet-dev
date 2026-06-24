@@ -2,10 +2,12 @@ import { motion } from "framer-motion";
 import Reveal from "../common/Reveal";
 import profileImage from "../../assets/profileImage.jpg";
 
-
 function About() {
   return (
-    <section id="about" className="relative overflow-hidden px-6 md:py-24 py-16">
+    <section
+      id="about"
+      className="relative overflow-hidden px-6 md:py-24 py-16"
+    >
       {/* Glow */}
       <div className="absolute left-0 top-0 h-[300px] w-[300px] bg-violet-600/10 blur-3xl" />
 
@@ -27,10 +29,10 @@ function About() {
           </div>
         </Reveal>
 
-        <div className="grid items-center gap-14 lg:grid-cols-2">
+        <div className="grid items-center lg:gap-12 lg:grid-cols-[340px_1fr]">
           {/* LEFT IMAGE */}
           <Reveal>
-            <div className="relative">
+            <div className="relative hidden lg:block">
               {/* Glow */}
               <div className="absolute inset-0 rounded-[40px] bg-violet-600/20 blur-3xl" />
 
@@ -38,7 +40,7 @@ function About() {
                 <img
                   src={profileImage}
                   alt="About"
-                  className="w-full h-auto md:h-[550px] md:w-full rounded-[30px] object-cover"
+                  className="w-full h-auto rounded-[30px] object-cover"
                 />
               </div>
             </div>
@@ -63,14 +65,13 @@ function About() {
                 UI designs.
               </p>
 
-
               {/* Stats */}
               <div className="mt-10 grid grid-cols-2 gap-6">
                 <motion.div
                   whileHover={{ y: -5 }}
                   className="rounded-3xl border theme-border theme-glass p-6"
                 >
-                  <h4 className="text-4xl font-bold text-violet-400">10+</h4>
+                  <h4 className="text-3xl font-bold text-violet-400">10+</h4>
 
                   <p className="mt-2 theme-subtext">Real-World Projects</p>
                 </motion.div>
@@ -79,7 +80,7 @@ function About() {
                   whileHover={{ y: -5 }}
                   className="rounded-3xl border theme-border theme-glass p-6"
                 >
-                  <h4 className="text-4xl font-bold text-cyan-400">2</h4>
+                  <h4 className="text-3xl font-bold text-cyan-400">2</h4>
 
                   <p className="mt-2 theme-subtext">Internships Completed</p>
                 </motion.div>

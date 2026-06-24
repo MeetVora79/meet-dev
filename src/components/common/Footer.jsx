@@ -6,6 +6,16 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const quickLinks = [
+  { id: "about", label: "About" },
+  { id: "skills", label: "Skills" },
+  { id: "projects", label: "Projects" },
+  { id: "github", label: "GitHub" },
+  { id: "experience", label: "Experience" },
+  { id: "contact", label: "Contact" },
+];
 
 function Footer() {
   const scrollToTop = () => {
@@ -33,9 +43,9 @@ function Footer() {
 
       <div className="container-width relative z-10">
         {/* Grid */}
-        <div className="grid gap-14 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-[1.8fr_1fr_1fr_1fr]">
           {/* About */}
-          <div>
+          <div className="max-w-xl">
             <div className="text-3xl font-black theme-heading flex items-center gap-4">
               <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl border border-white/10 theme-logo text-lg font-black text-white transition duration-300 group-hover:scale-105 group-hover:border-violet-500/30">
                 {/* Glow */}
@@ -46,14 +56,16 @@ function Footer() {
 
               {/* Brand */}
               <div className="flex flex-col">
-                <h2 className="text-3xl font-black theme-heading">Meet<span className="text-violet-400">.dev</span></h2>
+                <h2 className="text-3xl font-black theme-heading">
+                  Meet<span className="text-violet-400">.dev</span>
+                </h2>
                 <span className="text-sm theme-softtext">
                   Digital Experiences
                 </span>
               </div>
             </div>
 
-            <p className="mt-6 leading-relaxed theme-subtext">
+            <p className="mt-8 leading-relaxed font-light italic theme-subtext">
               "Full Stack MERN Developer focused on building scalable
               applications, premium frontend experiences, and modern web
               architectures."
@@ -65,53 +77,16 @@ function Footer() {
             <h3 className="text-xl font-bold theme-heading">Quick Links</h3>
 
             <div className="mt-6 flex flex-col gap-4">
-              <button
-                type="button"
-                onClick={() => scrollToSection("about")}
-                className="w-fit theme-subtext transition hover:cursor-pointer"
-              >
-                About
-              </button>
-
-              <button
-                type="button"
-                onClick={() => scrollToSection("skills")}
-                className="w-fit theme-subtext transition hover:cursor-pointer"
-              >
-                Skills
-              </button>
-
-              <button
-                type="button"
-                onClick={() => scrollToSection("projects")}
-                className="w-fit theme-subtext transition hover:cursor-pointer"
-              >
-                Projects
-              </button>
-
-              <button
-                type="button"
-                onClick={() => scrollToSection("github")}
-                className="w-fit theme-subtext transition hover:cursor-pointer"
-              >
-                Github
-              </button>
-
-              <button
-                type="button"
-                onClick={() => scrollToSection("experience")}
-                className="w-fit theme-subtext transition hover:cursor-pointer"
-              >
-                Experience
-              </button>
-
-              <button
-                type="button"
-                onClick={() => scrollToSection("contact")}
-                className="w-fit theme-subtext transition hover:cursor-pointer"
-              >
-                Contact
-              </button>
+              {quickLinks.map(({ id, label }) => (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => scrollToSection(id)}
+                  className="w-fit theme-subtext transition-all duration-300 hover:translate-x-1 hover:text-violet-400 hover:cursor-pointer"
+                >
+                  {label}
+                </button>
+              ))}
             </div>
           </div>
 
@@ -165,7 +140,7 @@ function Footer() {
                 <div>
                   <p className="theme-subtext">Surat, Gujarat</p>
 
-                  <p className="theme-softtext">India</p>
+                  <p className="theme-softtext">India, 394101</p>
                 </div>
               </div>
 
@@ -192,14 +167,27 @@ function Footer() {
           </p>
 
           {/* Scroll Top */}
-          <button
+          <motion.button
             type="button"
             aria-label="Scroll to top"
             onClick={scrollToTop}
-            className="rounded-2xl border theme-border theme-btn p-4 backdrop-blur-xl transition hover:-translate-y-1 hover:bg-violet-700"
+            animate={{
+              y: [0, -6, 0],
+              boxShadow: [
+                "0 0 0 rgba(139,92,246,0)",
+                "0 0 20px rgba(139,92,246,0.25)",
+                "0 0 0 rgba(139,92,246,0)",
+              ],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+            className="rounded-2xl border theme-border theme-btn p-4 backdrop-blur-xl"
           >
-            <FaArrowUp aria-hidden="true" />
-          </button>
+            <FaArrowUp />
+          </motion.button>
         </div>
       </div>
     </footer>

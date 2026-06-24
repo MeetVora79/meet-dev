@@ -255,7 +255,7 @@ function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-3 rounded-2xl border theme-border theme-glass px-6 py-4 font-semibold theme-heading transition hover:border-violet-500/30"
+                    className="flex items-center gap-3 rounded-2xl border theme-border theme-glass px-6 py-4 font-semibold theme-heading transition hover:scale-105"
                   >
                     GitHub
                     <FaGithub />
